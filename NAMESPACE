@@ -1,0 +1,3 @@
+exportPattern("^[[:alpha:]]+")
+useDynLib(distributions)
+importFrom(Rcpp, sourceCpp)

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "PuniformeDiscreta<- function(a,b){\n      mean<-(a+b)/2\n      var<-((b-a+1)**2-1)/12\n      c(mean,var)\n}\nPbernoulli<- function(p,...){\n      mean<-p\n      var<-p*(1-p)\n      c(mean,var)\n}\nPbinomial<- function(n,p){\n      mean<-n*p\n      var<-n*p*(1-p)\n      c(mean,var)\n}\nPgeometrica<- function(p,...){\n      mean<-(1-p)/p\n      var<-(1-p)/p**2\n      c(mean,var)\n}\nPbinomialNegativa<- function(r,p){\n      mean<-(r*p)/(1-p)\n      var<-(r*p)/(1-p)**2\n      c(mean,var)\n}\nPpoisson<- function(l,...){\n      mean<-l\n      var<-l\n      c(mean,var)\n}\nPuniformeContinua<- function(a,b){\n      mean<-(a+b)/2\n      var<-(b-a)**2/12\n      c(mean,var)\n}\nPexponencial<- function(l,...){\n      mean<-l\n      var<-l**2\n      c(mean,var)\n}\nPgamma<- function(r,l){\n      mean<-r/l\n      var<-r/l**2\n      c(mean,var)\n}\nPbeta<- function(a,b){\n      mean<-a/(a+b)\n      var<-(a*b)/((a+b)**2*(a+b+1))\n      c(mean,var)\n}\nPnormal<- function(m,s){\n      mean<-m\n      var<-s\n      c(mean,var)\n}\nPlognormal<- function(m,s){\n      mean<-exp(m+s**2/2)\n      var<-(exp(s**2)-1)*exp(2*m+s**2)\n      c(mean,var)\n}\nPweibull<- function(k,l){\n      mean<- l* base::gamma(1+1/k)\n      var<-l**2*( base::gamma(1+2/k)-( base::gamma(1+1/k))**2)\n      c(mean,var)\n}\n",
+    "created" : 1493922151357.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1056476688",
+    "id" : "62271F3C",
+    "lastKnownWriteTime" : 1493919107,
+    "last_content_update" : 1493919107,
+    "path" : "C:/Users/memo/Desktop/distributions/R/parametros.R",
+    "project_path" : "R/parametros.R",
+    "properties" : {
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
