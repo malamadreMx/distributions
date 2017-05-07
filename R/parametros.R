@@ -50,7 +50,7 @@ Pbeta<- function(a,b){
 }
 Pnormal<- function(m,s){
       mean<-m
-      var<-s
+      var<-s**2
       c(mean,var)
 }
 Plognormal<- function(m,s){
