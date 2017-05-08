@@ -31,7 +31,7 @@ dbernoulli <- function(x,p,...){
 }
 
 duniformeDiscreta <- function(x,a,b){
-      ifelse(x>=a & x<=b,1/m,0)
+      ifelse(x>=a & x<=b,1/(b-a+1),0)
 }
 
 dbinomial <- function(x,n,p){
