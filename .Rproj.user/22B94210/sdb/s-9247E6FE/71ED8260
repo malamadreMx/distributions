@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "duniformeContinua <- function(x,a,b){\n      ifelse(x>a & x<b,1/(b-a),0)\n}\n\ndexponencial <- function(x,b,...){\n      ifelse(x>0,exp(-x/b)/b,0)\n}\n\ndgamma <- function(x,r,lambda){\n      ifelse(x>0,lambda**r/(base::gamma(r))*x**(r-1)*exp(-lambda*x),0)\n}\n\ndweibull <- function(x,alpha,beta){\n      ifelse(x>0,alpha*beta**(-alpha)*x**(alpha-1)*exp(-(x/beta)**alpha),0)\n}\n\ndnormal <- function(x,mu,sigma){\n      1/sqrt(2*pi*sigma**2)*exp(-(x-mu)**2/(2*sigma**2))\n}\n\ndbeta <- function(x,a,b){\n      ifelse(x>0 & x<1,x**(a-1)*(1-x)**(b-1)/base::beta(a,b),0)\n}\n\ndlognormal <- function(x,mu,sigma){\n      ifelse(x>0,1/(sqrt(2*pi)*sigma*x)*exp(-(log(x)-mu)**2/(2*sigma**2)),0)\n}\n\ndbernoulli <- function(x,p,...){\n      ifelse(x==1,p,1-p)\n}\n\nduniformeDiscreta <- function(x,a,b){\n      ifelse(x>=a & x<=b,1/m,0)\n}\n\ndbinomial <- function(x,n,p){\n      choose(n,x)*p**x*(1-p)**(n-x)\n}\n\ndgeometrica <- function(x,p,...){\n      (1-p)**x*p\n}\n\ndbinomialNegativa <- function(x,r,p){\n      choose(x+r-1,x)*(1-p)**r*p**x\n}\n\ndpoisson <- function(x,lambda,...){\n      lambda**x*exp(-lambda)/factorial(x)\n}\n",
+    "created" : 1494211304748.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "912332905",
+    "id" : "71ED8260",
+    "lastKnownWriteTime" : 1494211417,
+    "last_content_update" : 1494211417328,
+    "path" : "C:/Users/memo/Desktop/distributions/R/densidades.R",
+    "project_path" : "R/densidades.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

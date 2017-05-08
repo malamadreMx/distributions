@@ -79,8 +79,8 @@ bernoulli <- function(n,p,...){
 }
 
 
-uniformeDiscreta <- function(n,m,...){
-      round(uniformeContinua(n,0,m)+.5)
+uniformeDiscreta <- function(n,a,b){
+      round(uniformeContinua(n,a-1,b)+.5)
 }
 
 binomial <- function(N,n,p){

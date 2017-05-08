@@ -30,8 +30,8 @@ dbernoulli <- function(x,p,...){
       ifelse(x==1,p,1-p)
 }
 
-duniformeDiscreta <- function(x,m,...){
-      ifelse(x>0 & x<=m,1/m,0)
+duniformeDiscreta <- function(x,a,b){
+      ifelse(x>=a & x<=b,1/m,0)
 }
 
 dbinomial <- function(x,n,p){
